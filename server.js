@@ -1,10 +1,3 @@
-{
-    "env": {
-    "MONGO_ATLAS_PW": "MongoPassword",
-        "Jtoken_Key": "Key123"
-}
-}
-
 //Alt koden der bruges til at starte serveren
 //De forskellige stier befinder sig i app.js
 //Importerer http pakken fra node.js
