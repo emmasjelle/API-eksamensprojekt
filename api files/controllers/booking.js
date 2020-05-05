@@ -47,7 +47,7 @@ exports.bookings_post_booking = (req, res, next) => {
         time: req.body.time,
         practitioner: req.body.practitioner,
         client: req.body.client,
-        availability: req.body.availability,
+        animal: req.body.string
     });
     booking
         .save()

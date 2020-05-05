@@ -6,7 +6,7 @@ const bookingSchema = mongoose.Schema({
     time: String, //Ex 08:00-10:00
     practitioner: {type: mongoose.Schema.Types.ObjectId, ref: 'User'}, //Ex Sanel
     client: {type: mongoose.Schema.Types.ObjectId, ref: 'User'}, //Ex Emma
-    availability: Boolean //Ex True/False
+    animal: String //Should be a string of species + name Ex: ('Horse, John)
 });
 
 module.exports = mongoose.model('Booking', bookingSchema);
