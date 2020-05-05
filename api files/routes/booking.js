@@ -10,7 +10,7 @@ const bookingController = require('../controllers/booking');
 router.get("/", bookingController.bookings_get_all);
 
 //[2] Finder en specifik booking i databasen på baggrund af et Id
-router.get('/:bookingId', bookingController.bookings_get_booking);
+router.get('/getById', bookingController.bookings_get_booking);
 
 //[3]POST Laver en booking
 router.post('/create', bookingController.bookings_post_booking);
@@ -23,5 +23,6 @@ router.delete('/:bookingId', bookingController.bookings_delete_booking);
 
 //[6]POST Henter alle bookings på baggrund af ejerens id
 router.post('/getByUser', bookingController.bookings_get_byUser);
+
 
 module.exports = router;
