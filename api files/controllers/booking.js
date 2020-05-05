@@ -118,3 +118,19 @@ exports.bookings_get_byUser = (req, res, next) => {
             });
         });
 };
+
+//[7]POST Henter alle bookings på baggrund af ejerens id
+exports.bookings_get_byPrac = (req, res, next) => {
+    Booking.find({practitioner: req.body.userId})
+        .exec()
+        .then(bookings => {
+            console.log(bookings);
+            res.status(200).json(bookings);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({
+                error: err
+            });
+        });
+};

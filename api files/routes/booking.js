@@ -24,5 +24,7 @@ router.delete('/:bookingId', bookingController.bookings_delete_booking);
 //[6]POST Henter alle bookings på baggrund af ejerens id
 router.post('/getByUser', bookingController.bookings_get_byUser);
 
+//[7]POST Henter alle bookings på baggrund af ejerens id
+router.post('/getByPrac', bookingController.bookings_get_byPrac);
 
 module.exports = router;
