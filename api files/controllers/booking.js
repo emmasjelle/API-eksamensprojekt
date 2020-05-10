@@ -124,6 +124,27 @@ exports.bookings_get_byPrac = (req, res, next) => {
     Booking.find({practitioner: req.body.userId})
         .exec()
         .then(bookings => {
+            if(bookings.length === 0){
+                return res.status(409).json({
+                  message: 'no booking found'
+                })
+            }
+            console.log(bookings);
+            res.status(200).json(bookings);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({
+                error: err
+            });
+        });
+};
+
+//[8]GET Finder en specifik booking i databasen på baggrund af en dato
+exports.bookings_get_bookingsByDate = (req, res, next) => {
+    Booking.find({date: req.body.date})
+        .exec()
+        .then(bookings => {
             console.log(bookings);
             res.status(200).json(bookings);
         })

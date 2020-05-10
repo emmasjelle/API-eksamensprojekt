@@ -27,4 +27,7 @@ router.post('/getByUser', bookingController.bookings_get_byUser);
 //[7]POST Henter alle bookings på baggrund af ejerens id
 router.post('/getByPrac', bookingController.bookings_get_byPrac);
 
+//[8]GET Finder en specifik booking i databasen på baggrund af en dato
+router.post('/getByDate', bookingController.bookings_get_bookingsByDate);
+
 module.exports = router;

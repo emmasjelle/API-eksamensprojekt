@@ -1,6 +1,6 @@
 {
   "env": {
-    "MONGO_ATLAS_PW": "MongoPassword",
+    "mongoDB_password": "MongoPassword",
     "Jtoken_Key": "Key123"
   }
 }

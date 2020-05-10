@@ -15,7 +15,7 @@ const animalRoutes = require('./api files/routes/animals');
 
 //Passwordet til databasen er hardcoded i nodemon.json
 mongoose.connect('mongodb+srv://Hartvig1337:' +
-    process.env.MONGO_ATLAS_PW +
+    process.env.mongoDB_password +
     '@eksamensprojekt-api-5tszk.mongodb.net/test?retryWrites=true&w=majority',
     {
         useUnifiedTopology: true,
