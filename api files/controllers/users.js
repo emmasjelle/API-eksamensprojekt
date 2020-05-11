@@ -192,7 +192,7 @@ exports.users_delete_user = (req, res, next) => {
         });
 };
 
-//[7]POST Check for admin
+//[7]POST Check for prac status
 exports.users_check_user = (req, res, next) => {
     User.find({email: req.body.email})
         .exec()
@@ -210,7 +210,7 @@ exports.users_check_user = (req, res, next) => {
         });
 };
 
-//[8]POST Check for admin
+//[8]POST converts id into name
 exports.users_check_name = (req, res, next) => {
     User.find({id: req.body.id})
         .exec()
