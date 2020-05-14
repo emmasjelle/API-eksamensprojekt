@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-const Animal = require('../models/animals');
 
 //Henter vores animals controller til vores routes fra ..\controllers\users.js
 const animalsController = require('../controllers/animals');

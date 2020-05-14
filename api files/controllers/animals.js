@@ -1,7 +1,6 @@
 //Denne fil indeholder alle vores http verbs og agerer som controller til animals
 const mongoose = require('mongoose');
 const Animal = require('../models/animals');
-const User = require('../models/users');
 
 //[1]GET Finder alle animals i databasen
 exports.animals_get_all = (req, res, next) => {

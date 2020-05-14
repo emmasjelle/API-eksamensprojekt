@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-const User = require('../models/users');
 
 //Henter vores user controller til vores routes fra ..\controllers\users.js
 const usersController = require('../controllers/users');

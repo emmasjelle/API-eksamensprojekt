@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const User = require('../models/users');
-const jToken = require('jsonwebtoken');
+const jToken = require('jsonwebtoken'); //Bruges ikke i denne omgang men er klar til næste semester.
 
 //[1]GET Finder alle users i databasen
 exports.users_get_all = (req, res, next) => {

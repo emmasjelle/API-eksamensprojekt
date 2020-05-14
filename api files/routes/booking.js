@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-const Booking = require('../models/booking');
 
 //Henter vores booking controller til vores routes fra ..\controllers\booking.js
 const bookingController = require('../controllers/booking');
